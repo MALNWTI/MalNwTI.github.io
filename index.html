@@ -9,13 +9,13 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="container">
+    <header>
       <ul class="menu" id="menu">
-        <li class="active">Home</li>
-        <li>About me</li>
-        <li>Skills</li>
-        <li>Portfolio</li>
-        <li>Contacts</li>
+        <li> <a href="#home"  class="active">Home</a></li>
+        <li><a href='#about'> About me</a></li>
+        <li><a href='#skills'>Skills</a></li>
+        <li><a href='#portfolio'>Portfolio</a></li>
+        <li><a href="#contacts"> Contacts </a></li>
       </ul>
       <div class="wrapBurger wrapBurgerA" id="WBurger" onclick="burger()">
         <div class="burgerA" id="IBurger">
@@ -23,7 +23,7 @@
       </div>
     </header>
     <main>
-      <section class="Home">
+      <section class="Home" id="home"> 
         <div class="container">
           <div class="HomeTop">
             <h1 class="HomeName">
@@ -46,7 +46,7 @@
           </div>
         </div>
       </section>
-      <section class="About">
+      <section class="About" id="about">
         <div class="WrapAbout">
           <h2 class="Title">
             About
@@ -64,7 +64,7 @@
           </p>
         </div>
       </section>
-      <section class="Skills">
+      <section class="Skills" id="skills">
         <div class="container">
           <h2 class="Title">
             Skills
@@ -105,7 +105,7 @@
         </div>
       </section>
 
-      <section class="Portfolio">
+      <section class="Portfolio" id='portfolio'>
         <div class="container">
           <h2 class="Title">
             Portfolio
@@ -116,7 +116,7 @@
         </div>
       </section>
 
-      <section class="Contacts">
+      <section class="Contacts" id='contacts'>
         <div class="container">
           <h2 class="Title">
             Contacts

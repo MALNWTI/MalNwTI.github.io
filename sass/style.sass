@@ -16,6 +16,12 @@ $burgerLine: 5px
     font-family: "GilroyMedium"
     src : url(../gilroy/Gilroy-Medium.ttf)
 
+//html
+//  scroll-behavior: smoth
+
+//element.scrollIntoView({ behavior: 'smooth' })
+
+
 *
   margin: 0
   padding: 0
@@ -27,6 +33,8 @@ $burgerLine: 5px
 body
   background: $bg
 
+main 
+  padding-top: 100px
 section
   max-width: 100vw
   padding: 100px 20px
@@ -53,10 +61,15 @@ section
   padding-bottom: 20px 
 
 header
-  padding: 0 20px
   height: 90px
+  width: 100vw
   border-bottom: 2px solid $gray
+  position: fixed
+  background: $bg
   ul
+    margin: auto
+    max-width: 1200px
+    padding: 0 20px
     height: 100%
     display: flex
     flex-direction: row
@@ -70,6 +83,13 @@ header
       color: $black
     .active 
       color: $black
+    a 
+      width: 100%
+      height: 100% 
+      font-size: inherit
+      color: inherit
+      text-decoration: none
+      
 
 .Home 
   padding: 0 20px

@@ -1,0 +1,1 @@
+"use strict";function burger(){var e=document.getElementById("IBurger"),r=document.getElementById("menu"),a=document.getElementById("WBurger");"burgerA"==e.className?(e.className="burgerD",r.className="menuA",a.className="wrapBurger wrapBurgerF"):(e.className="burgerA",r.className="menu",a.className="wrapBurger wrapBurgerA")}

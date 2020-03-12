@@ -2,6 +2,12 @@ $bg: #fff
 $black: #000
 $gray: #828282
 $bgGray: #F6F6F6
+
+$burWidth: 40px
+$burHeight: 20px
+$burgerLine: 5px
+
+
 @font-face
     font-family: "GilroyBold"
     src : url(../gilroy/Gilroy-Bold.ttf)
@@ -64,16 +70,13 @@ header
       color: $black
     .active 
       color: $black
-    li:active 
-      outline: 
-
 
 .Home 
   padding: 0 20px
   padding-bottom: 100px
   .HomeTop
     width: 100%
-    height: 200px
+    padding: 50px 0
     display: flex
     justify-content: space-between
     align-items: center
@@ -81,7 +84,6 @@ header
       display: block
       width: 20%
       font-size: 48px
-      width: 20%
     .HomeBio
       text-align: center
       display: block
@@ -181,3 +183,107 @@ header
 footer 
   padding-bottom: 20px
   text-align: center
+
+
+
+//@media screen and (max-device-width: 1200px) 
+
+@media screen and (max-device-width: 960px) 
+  section
+    padding: 50px 20px
+  .HomeTop
+    justify-content: space-between
+    .HomeBio 
+      text-align: right !important
+      padding: 0px !important
+    .HomeLang
+      display: none
+
+  .WrapSkills
+    justify-content: center
+
+@media screen and (max-device-width: 600px)
+  header 
+    border: none
+    height: 10px
+  .HomeTop
+    padding: 20px 0 !important
+    flex-direction: column
+    align-items: flex-start !important
+    .HomeName
+      width: 80%
+    .HomeBio
+      width: 80%
+      text-align: left !important
+  .menu
+    display: none
+  .menuA
+    padding-top: 40px
+    z-index: 200
+    background: $bg
+    position: fixed
+    width: 100%
+    height: 100vh
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    li 
+      font-size: 34px
+      padding: 10px
+
+
+  .WrapSkills
+    background: inherit
+  .wrapBurger  
+    z-index: 999
+    display: flex 
+    justify-content: center
+    flex-direction: column
+    top: 40px
+    right: 10px
+    width: $burWidth
+    height: $burHeight
+    cursor: pointer
+    .burgerA
+      position: relative
+      display: block
+      width: 100%
+      height: $burgerLine
+      background: $black
+    .burgerA::after, 
+    .burgerA::before,
+      content: '' 
+      position: absolute
+      display: block
+      width: 100%
+      height: $burgerLine
+      background: $black
+    .burgerA::after 
+      top: -10px
+    .burgerA::before
+      top: 10px
+
+    .burgerD
+      position: relative
+      display: block
+      width: 100%
+      height: $burgerLine
+      background: none
+    .burgerD::after, 
+    .burgerD::before,
+      transition-duration: 1s
+      content: '' 
+      position: absolute
+      display: block
+      width: 100%
+      height: $burgerLine
+      background: $black
+    .burgerD::after 
+      transform: rotate(45deg)
+    .burgerD::before
+      transform: rotate(-45deg)
+  .wrapBurgerA
+    position: absolute
+  .wrapBurgerF
+    position: fixed
+    

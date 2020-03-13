@@ -48,7 +48,6 @@ function closeMenu() {
 }
 
 function changeActive(currentLi) {
-  var anchors = document.querySelectorAll('a[href*="#"]');
   var _iteratorNormalCompletion2 = true;
   var _didIteratorError2 = false;
   var _iteratorError2 = undefined;
@@ -58,7 +57,6 @@ function changeActive(currentLi) {
       var anchor = _step2.value;
 
       if (anchor.getAttribute('href').substr(1) == currentLi) {
-        console.log(anchor);
         anchor.className = 'active';
       } else {
         anchor.className = '';
@@ -94,4 +92,20 @@ function burger() {
     menu.className = 'menu';
     Wburger.className = 'wrapBurger wrapBurgerA';
   }
-}
+} // window.onload = function () {
+//     const WrapC = document.getElementById('WrapperContent')
+//     const WrapC = 'WrapperContent'
+//     console.log(WrapC.className)
+//     WrapC.className = ('"' + WrapC.className + ' ' + ' Dis' +'"')
+// }
+// const wrappers = document.querySelectorAll('div[class*="topWrapper"]')
+// for (let wrapper of wrappers){
+//     wrapper.addEventListener('mouseover', function(e){
+//         e.preventDefault()
+//         wrapper.children[0].className = "WrapperContent WrapFocusOn"
+//         console.log('work')
+//     })
+//     // console.log(wrapper)
+//     // console.log(wrapper.children[0])
+//     //wrapper.children[0].className = "WrapperContent Disable"    
+// }

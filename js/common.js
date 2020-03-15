@@ -7,7 +7,7 @@ for (let anchor of anchors) {
       
       document.getElementById(blockID).scrollIntoView({
         behavior: 'smooth',
-        block: 'center'
+        block: 'start'
       })
       
       changeActive(blockID)

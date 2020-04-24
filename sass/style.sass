@@ -314,7 +314,7 @@ footer
     .HomeLang
       display: none
   .WrapSkills
-    justify-content: center
+    justify-content: center !important
   .BottomTitle
     color: $black !important
   .TopPortfolio
@@ -325,12 +325,11 @@ footer
     width: calc( 50% - 20px ) !important
     height: 340px
 
-@media screen and (max-width: 767px)
+@media screen and (max-width: 769px)
   header
-    border: none
-    height: 10px
+    height: 60px
   main
-    padding-top: 0px
+    padding-top: 60px
   .HomeTop
     padding: 20px 0 !important
     flex-direction: column
@@ -357,16 +356,16 @@ footer
       padding: 10px
 
 
-  .WrapSkills
-    background: inherit
-    justify-content: flex-start !important
+  // .WrapSkills
+  //   background: inherit
+  //   justify-content: flex-start !important
   .wrapBurger
     z-index: 999
     display: flex
     justify-content: center
     flex-direction: column
-    top: 40px
-    right: 10px
+    top: 20px
+    right: 20px
     width: $burWidth
     height: $burHeight
     cursor: pointer

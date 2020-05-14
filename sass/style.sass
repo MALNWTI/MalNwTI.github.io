@@ -7,20 +7,18 @@ $burWidth: 40px
 $burHeight: 20px
 $burgerLine: 5px
 
-
 @font-face
-    font-family: "GilroyBold"
+  font-family: "GilroyBold"
     src : url(../gilroy/Gilroy-Bold.ttf)
 
 @font-face
-    font-family: "GilroyMedium"
+  font-family: "GilroyMedium"
     src : url(../gilroy/Gilroy-Medium.ttf)
 
 //html
 //  scroll-behavior: smoth
 
 //element.scrollIntoView({ behavior: 'smooth' })
-
 
 *
   margin: 0
@@ -91,10 +89,8 @@ header
       color: inherit
       text-decoration: none
 
-
 .Home
   padding: 0 20px
-  padding-bottom: 100px
   .HomeTop
     width: 100%
     padding: 50px 0
@@ -121,13 +117,13 @@ header
   .HomeBottom
     display: block
     width: 100%
-    max-height: 400px
+    height: 600px
     overflow: hidden
     img
       width: 100%
-      height: 400px
+      max-height: 100%
       object-fit: cover
-      object-position: 0% 10%
+      object-position: 0% 25%
 
 .About
   width: 100%
@@ -165,7 +161,6 @@ header
           transform: scale(1.1)
         span
           color: $black
-
 
 .Portfolio
   background: $bgGray
@@ -254,7 +249,6 @@ header
         .TopPortfolio
           height: 40px !important
 
-
 .Contacts
   .container
     display: flex
@@ -301,7 +295,6 @@ footer
   padding-bottom: 20px
   text-align: center
 
-
 @media screen and (max-device-width: 960px)
   section
     padding: 50px 20px
@@ -329,14 +322,19 @@ footer
     height: 60px
   main
     padding-top: 60px
+  .Home
+    .HomeBottom
+      height: 350px
+      img
+        object-position: unset
   .HomeTop
     padding: 20px 0 !important
     flex-direction: column
     align-items: flex-start !important
     .HomeName
-      width: 80%
+      width: 100% !important
     .HomeBio
-      width: 80%
+      width: 100% !important
       text-align: left !important
   .menu
     display: none
@@ -353,7 +351,6 @@ footer
     li
       font-size: 34px
       padding: 10px
-
 
   // .WrapSkills
   //   background: inherit
@@ -415,3 +412,11 @@ footer
     width: 100% !important
     height: 340px
 
+  .WrapPortfolio
+    .wrapper
+      .wrapperLink
+        .BottomPortfolio
+          padding-left: 0px !important
+  .About
+    .WrapAbout
+      width: 100%

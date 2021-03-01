@@ -1,0 +1,36 @@
+header{
+    height: 90px;
+    width: 100vw;
+    border-bottom: 2px solid $gray;
+    position: fixed;
+    z-index: 500;
+    background: $bg;
+    ul{
+      margin: auto;
+      max-width: 1200px;
+      padding: 0 20px;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      li{
+          cursor: pointer;
+          list-style-type: none;
+          color: $gray;
+          &:hover{
+            color: $black;
+          }
+      }
+      .active{
+        color: $black
+      }
+      a{
+        width: 100%;
+        height: 100%;
+        font-size: inherit;
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }

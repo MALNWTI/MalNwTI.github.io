@@ -44,7 +44,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "directories": {
-    "doc": "dist"
+    "doc": "docs"
   },
   "repository": {
     "type": "git",

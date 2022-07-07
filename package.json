@@ -7,7 +7,7 @@
     "dev": "webpack --mode development",
     "watch": "webpack --mode development --watch",
     "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html"
+    "build": "webpack --mode production && prettier --print-width=120 --parser html --write docs/*.html"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
@@ -51,8 +51,7 @@
     "url": "https://github.com/VHolodiuk"
   },
   "keywords": [
-    "solars",
-    "jQuery",
+    "js",
     "html",
     "css",
     "scss."
